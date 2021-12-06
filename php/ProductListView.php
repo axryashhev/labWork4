@@ -25,21 +25,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="CatalogVIew.php">Каталог</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="ProductListView.php">Каталог с товаром</a>
-            </li>
         </ul>
     </div>
 </nav>
 
 <header class="page-header container-fluid">
         <div class="row">
-<!--                <div class="bottom">-->
-<!--                    <div class="heading">Chuck Taylor All Star Classic Colours</div>-->
-<!--                    <div class="info">Classic red converse edition</div>-->
-<!--                    <div class="style">Color: Red / Style: M9621C</div>-->
-<!--                    <div class="price">$50.00 <span class="old-price">$75.00</span></div>-->
-<!--                </div>-->
 
                 <?php
 
@@ -60,7 +51,7 @@
                                         </ul>
                                     </div>
                             
-                                    <div class="middle">
+                                    <div class="middle" data-toggle="modal" data-target="#glassAnimals">
                                         <img src="'.$product->getPhoto().'" alt="pic" />
                                     </div>
                             
@@ -76,8 +67,27 @@
                         echo $text;
                     }
                  ?>
-
-
+            <div class="modal fade" id="glassAnimals" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Информация о продукте (Name 1)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../css/images/shop1.jpg" alt="pic" />
+                            Описание продукта
+                            <div class="price">$10 <span class="old-price">$30</span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                            <button type="button" class="btn btn-danger">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </header>
 

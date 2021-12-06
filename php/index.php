@@ -25,9 +25,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="CatalogVIew.php">Каталог</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ProductListView.php">Страница с товаром</a>
-                </li>
             </ul>
         </div>
     </nav>
